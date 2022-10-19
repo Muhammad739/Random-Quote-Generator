@@ -1,4 +1,6 @@
+// creating function for random quote generator
 function random_quote(){
+    // an Array of quotes
     let quote = [
         "The purpose of our lives is to be happy.",
         "Life is what happens when you're busy making other plans.",
@@ -12,16 +14,18 @@ function random_quote(){
         "Not how long, but how well you have lived is the main thing."
 
     ];
-
+    
+    // for loop to get the length of quote array and compare it with (i) and then increament (i) until it become equal to quote length
     for (i=0; i < quote.length ; i++){
-
+        
+        // multiplying random number with quote length
         let index = Math.floor(Math.random() * quote.length);
-
+        
+        // return the quote with number we get from index variable and put it in the square bracket
         return quote[index];
     }
 };
 
+// calling function
 console.log(random_quote());
 
-
-console.log("hello")
